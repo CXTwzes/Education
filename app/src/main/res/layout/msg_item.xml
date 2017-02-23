@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/left_layout"
+        >
+        <LinearLayout android:id="@+id/leftTime"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/leftDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-2-12 12:21:21"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/leftTime">
+
+            <LinearLayout android:id="@+id/leftLinear"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true">
+                <ImageView android:id="@+id/msgLeftImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/username"
+                    />
+                <TextView android:id="@+id/msgLeftUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wzes"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/left_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/receive"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_marginRight="50dp"
+                android:padding="20dp"
+                android:text="你在哎是卡上就多久是多久啊可是多啊rrrr合并话 "
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/leftLinear" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:id="@+id/right_layout"
+        >
+        <LinearLayout android:id="@+id/rightTime"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/rightDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2017-2-12 12:21:21"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rightTime">
+            <TextView android:layout_toLeftOf="@+id/rightLinear"
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send"
+                android:layout_marginLeft="50dp"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="你在哎是卡上就多久是多久啊可是v更多啊合并啊是多久啊可是v更多啊合并啊是多久啊可是v更多啊话 "/>
+            <LinearLayout android:id="@+id/rightLinear"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+                <ImageView android:id="@+id/msgImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/username"
+                    />
+
+                <TextView android:id="@+id/msgRightUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="wzes"
+                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
